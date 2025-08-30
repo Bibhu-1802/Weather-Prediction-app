@@ -49,4 +49,10 @@ python manage.py runserver
 Bibhu Data Sethy – Aspiring Python Developer
 🔗 www.linkedin.com/in/bibhu-data
  | https://github.com/Bibhu-1802
+ 
+## 📸 Screenshots
+![front](https://github.com/user-attachments/assets/8ad5b170-c48d-463f-970c-018a0f1ec1df)
+
+![Output](https://github.com/user-attachments/assets/06c499b9-6c60-4f09-af7f-cea41ceecbe7)
+
 

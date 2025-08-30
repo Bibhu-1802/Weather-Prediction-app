@@ -35,14 +35,18 @@ venv\Scripts\activate   # for Windows
 3. Install dependencies
 
 pip install -r requirements.txt
+
 4. Add your OpenWeather API Key inside views.py
+
 5. Run the project
 
 python manage.py runserver
+
 6. Open in browser → http://127.0.0.1:8000/
 
 👤 Author
 
 Bibhu Data Sethy – Aspiring Python Developer
 🔗 www.linkedin.com/in/bibhu-data
- | GitHub
+ | https://github.com/Bibhu-1802
+

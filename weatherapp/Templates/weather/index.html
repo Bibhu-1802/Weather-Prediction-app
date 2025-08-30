@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - Bibhu Data Sethy</title>
+  <link rel="stylesheet" href="{% static 'weather/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🌦 Weather Prediction App</h1>
+    <form method="get" class="search-box">
+      <input type="text" name="city" placeholder="Enter city name" required>
+      <button type="submit">Get Weather</button>
+    </form>
+
+    {% if weather %}
+      <div class="card fade-in">
+        {% if weather.error %}
+          <p class="error">{{ weather.error }}</p>
+        {% else %}
+          <h2 class="city">{{ weather.city }}</h2>
+          <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" alt="Weather Icon" class="weather-icon">
+          <p class="temp">{{ weather.temperature }} °C</p>
+          <p class="description">{{ weather.description }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+  <script src="{% static 'weather/script.js' %}"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,123 @@
+/* Background with gradient animation */
+@keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(270deg, #00c6ff, #0072ff, #ff6ec4, #7873f5);
+  background-size: 800% 800%;
+  animation: bgAnimation 20s ease infinite;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeSlideDown 1.5s ease;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.search-box input:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+.search-box button:hover {
+  background: #e68900;
+  transform: scale(1.1);
+}
+
+.card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: popIn 1s ease forwards;
+}
+
+.city {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.weather-icon {
+  animation: bounce 2s infinite;
+}
+
+.temp {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.fade-in {
+  animation: fadeSlideDown 1.2s ease;
+}
+
+
+
+
